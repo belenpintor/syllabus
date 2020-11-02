@@ -1,98 +1,71 @@
-# Tarea X: Nombre de la tarea :school_satchel:
+# Tarea 02: DCCumbia:
 
-
-Un buen ```README.md``` puede marcar una gran diferencia en la facilidad con la que corregimos una tarea, y consecuentemente cómo funciona su programa, por lo en general, entre más ordenado y limpio sea éste, mejor será 
-
-Para nuestra suerte, GitHub soporta el formato [MarkDown](https://es.wikipedia.org/wiki/Markdown), el cual permite utilizar una amplia variedad de estilos de texto, tanto para resaltar cosas importantes como para separar ideas o poner código de manera ordenada ([pueden ver casi todas las funcionalidades que incluye aquí](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet))
-
-Un buen ```README.md``` no tiene por que ser muy extenso tampoco, hay que ser **concisos** (a menos que lo consideren necesario) pero **tampoco pueden** faltar cosas. Lo importante es que sea claro y limpio 
-
-**Dejar claro lo que NO pudieron implementar y lo que no funciona a la perfección. Esto puede sonar innecesario pero permite que el ayudante se enfoque en lo que sí podría subir su puntaje.**
 
 ## Consideraciones generales :octocat:
 
-<Descripción de lo que hace y que **_no_** hace la tarea que entregaron junto
-con detalles de último minuto y consideraciones como por ejemplo cambiar algo
-en cierta línea del código o comentar una función>
+<Mi tarea está muy incompleta por obstáculos que me dejaron falta de tiempo, 
+las clases se encuentran modeladas en sus funciones principales, sin embargo 
+no todas está
+<Mi tarea está muy incompleta por obstáculos que me dejaron falta de tiempo, y 
+queda muy evidenciado en la tarea. 
+Las clases se encuentran modeladas, sin embargo no todas se instancian y algunas 
+se encuentran incompletas, como la de pinguinos. En el backend se encuentran las
+clases creadas fuera de los menús. Lo principal que trabajé en el menú de juego 
+fue la aparición y movimiento de las flechas. Hay funciones que están implementadas
+pero no son visibles en el frontend, esto irá especificado con mayor detalle en 
+los items de la pauta posterior. 
+
 
 ### Cosas implementadas y no implementadas :white_check_mark: :x:
 
-* <Nombre item pauta<sub>1</sub>>: Hecha completa
-* <Nombre item pauta<sub>2</sub>>: Me faltó hacer <insertar qué cosa faltó>
-    * <Nombre subitem pauta<sub>2.1</sub>>: Hecha completa 
-    * <Nombre subitem pauta<sub>2.2</sub>>: Me faltó hacer <insertar qué cosa faltó>
-    * ...
-* <Nombre item pauta<sub>3</sub>>: Me faltó hacer <insertar qué cosa faltó>
+* <<Ventana de inicio sub>1</sub>>: Hecha completa
+* Vventana de ranking<sub>2</sub>>: Me faltó hacerla funcional  <insertar qué cosa faltó>
+    * <Ventana se muestra correctamente<sub>2.1</sub>>: Lo visual esta hecho 
+    * <Se muestra la cntidad correcta de puntaje <sub>2.2</sub>>: No lo hace 
+
+* <Ventana de Juego<sub>2</sub>>: Me faltó hacerla funcional  <insertar qué cosa faltó>
+    * <Generales<sub>2.1</sub>>: No se muestra el precio de los pinguinos
+    * <Fase de pre-ronda <sub>2.2</sub>>: No se selecciona un pinguino, no se puede comprar pinguino, no tiene funcionalidad elección de niveles y canciones. 
+    * <Fase ronda <sub>2.3</sub>>: De la dstribucó de puntae de esta sección, solo esta completo la marca de la zona de captura al apretar las letras. 
+    * <Fase post ronda <sub>2.4</sub>>: Totalmente incompleta.
+* <Mecánicas<sub>3</sub>>: Me faltó hacer <insertar qué cosa faltó>
+   * <Pinguirin <sub>3.1 La clase solo se encuentra odelada en el codigo 
+   * <Flechas <sub>3.2 Solo está implementada correctamente la flecha normal, la captura de flechas no funciona bien vsualmente, si se agregan a un cotador a nivel de código. 
+* <Funcionalidades extras<sub>4</sub>>: No están implementadas
 * ...
-* <Nombre item pauta<sub>n</sub>>: Me faltó hacer <insertar qué cosa faltó>
+* <General<sub>5</sub>>: Me faltó agregar todos los parámetros pedidos, como parametrizar las rutas. 
 
 ## Ejecución :computer:
-El módulo principal de la tarea a ejecutar es  ```archivo.py```. Además se debe crear los siguientes archivos y directorios adicionales:
-1. ```archivo.ext``` en ```ubicación```
-2. ```directorio``` en ```ubicación```
-3. ...
+El módulo principal de la tarea a ejecutar es  ```main.py```. Además se debe crear los siguientes archivos y directorios adicionales:
+1. ```backend.py``` en la carpeta que contenga main . ```T02```
+2. ```frontend.py``` en ```T02```
+3. ```parametros.py``` en ```T02```
 
 
 ## Librerías :books:
 ### Librerías externas utilizadas
 La lista de librerías externas que utilicé fue la siguiente:
 
-1. ```librería_1```: ```función() / módulo```
-2. ```librería_2```: ```función() / módulo``` (debe instalarse)
-3. ...
+1. ```sys```: ```función() / random```
+2. ```time```: ```función() time.sleep / módulo``` (debe instalarse)
+3. ```PyQt5.Widgets```: ```funciónes QApplication, QWidget, QPushButton, QLabel, QLineEdit, QHBoxLayout, QVBoxLayout, QMessageBox```
+4. ```PyQt5.QtGui```: ```QPixmap```
+5. ```PyQt5.QtCore ```: ```función pyqtSignal ```
+
 
 ### Librerías propias
 Por otro lado, los módulos que fueron creados fueron los siguientes:
 
-1. ```librería_1```: Contiene a ```ClaseA```, ```ClaseB```, (ser general, tampoco es necesario especificar cada una)...
-2. ```librería_2```: Hecha para <insertar descripción **breve** de lo que hace o qué contiene>
-3. ...
+1. ```fronted```: Contiene a ```Ventana_de_inicio```, ```Ventana_de_juego```, ```Ventana_de_ranking``` (Ventanas visuales diseñadas principalmente en qtdesigner con sus señales correspondientes que son conectadas en el main )...
+2. ```backend```:  Contiene a ```Pinguino ```, ```Flechas1``` , ```AI```.
+4. ```parametros```: Hecho para guardar parametros que serán utilizados en los distintos módulos y poder cambiarlos facilmente
 
-## Supuestos y consideraciones adicionales :thinking:
-Los supuestos que realicé durante la tarea son los siguientes:
-
-1. <Descripción/consideración 1 y justificación del por qué es válido/a> 
-2. <Descripción/consideración 2 y justificación del por qué es válido/a>
-3. ...
-
-PD: <una última consideración (de ser necesaria) o comentario hecho anteriormente que se quiera **recalcar**>
-
-
--------
-
-
-
-**EXTRA:** si van a explicar qué hace específicamente un método, no lo coloquen en el README mismo. Pueden hacerlo directamente comentando el método en su archivo. Por ejemplo:
-
-```python
-class Corrector:
-
-    def __init__(self):
-          pass
-
-    # Este método coloca un 6 en las tareas que recibe
-    def corregir(self, tarea):
-        tarea.nota  = 6
-        return tarea
-```
-
-Si quieren ser más formales, pueden usar alguna convención de documentación. Google tiene la suya, Python tiene otra y hay muchas más. La de Python es la [PEP287, conocida como reST](https://www.python.org/dev/peps/pep-0287/). Lo más básico es documentar así:
-
-```python
-def funcion(argumento):
-    """
-    Mi función hace X con el argumento
-    """
-    return argumento_modificado
-```
-Lo importante es que expliquen qué hace la función y que si saben que alguna parte puede quedar complicada de entender o tienen alguna función mágica usen los comentarios/documentación para que el ayudante entienda sus intenciones.
 
 ## Referencias de código externo :book:
 
 Para realizar mi tarea saqué código de:
-1. \<link de código>: este hace \<lo que hace> y está implementado en el archivo <nombre.py> en las líneas <número de líneas> y hace <explicación breve de que hace>
-
-
+1. Ayudantía 2020-1 syllabus para crear el ´Qthread llamada clase AI en el backend que guiaría el flujo del juego. se encuentra desde la linea 151
+2. https://www.geeksforgeeks.org/pyqt5-how-to-change-background-color-of-main-window/ para cambiar los colores de lazoa de captura en el modulo fronted.py desde la linea 167 a 190.
 
 ## Descuentos
 La guía de descuentos se encuentra [link](https://github.com/IIC2233/syllabus/blob/master/Tareas/Descuentos.md).
